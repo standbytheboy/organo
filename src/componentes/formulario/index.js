@@ -15,6 +15,11 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         evento.preventDefault(); {/* essa função previne que a página seja recarregada ao clicar no botão "criar card", dando sentido ao REACT e à sua forma de utilização */}
         props.aoColaboradorCadastrado({nome, cargo, imagem, time})
+
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
